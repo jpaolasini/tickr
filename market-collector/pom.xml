@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.tickr</groupId>
-    <artifactId>marketcollector</artifactId>
+    <artifactId>market-collector</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>marketcollector</name>
+    <name>market-collector</name>
     <description>Collect and Display Data from Different World Markets</description>
 
     <properties>
@@ -29,7 +29,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webflux</artifactId>
+            <artifactId>spring-boot-actuator</artifactId>
         </dependency>
 
         <!-- Runtime Dependencies -->
