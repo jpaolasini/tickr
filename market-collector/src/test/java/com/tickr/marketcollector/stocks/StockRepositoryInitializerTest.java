@@ -30,9 +30,8 @@ public class StockRepositoryInitializerTest {
     }
 
     @Test
-    public void generateRandomStockValue_shouldReturnValueBetween0And1000(){
-        Assertions.assertThat(stockRepositoryInitializer.generateRandomStockValue(0.0,1000.0))
-                .isBetween(0.0,1000.0);
+    public void generateRandomStockValue_shouldReturnValueBetween0And1000() {
+        Assertions.assertThat(stockRepositoryInitializer.generateRandomStockValue(0.0, 1000.0))
+                .isBetween(0.0, 1000.0);
     }
 }
-

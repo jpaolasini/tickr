@@ -25,6 +25,8 @@ import static org.springframework.data.mongodb.core.query.Query.query;
 @Slf4j
 public class StockRepositoryInitializer {
 
+    public static final double LOWER_STOCK_PRICE = 0.0;
+    public static final double UPPER_STOCK_PRICE = 1000.0;
     private final ObjectMapper objectMapper;
     private final MongoMappingContext mongoMappingContext;
     private final MongoTemplate mongoTemplate;
@@ -54,7 +56,7 @@ public class StockRepositoryInitializer {
                             .securityName(stock.getSecurityName())
                             .testIssue(stock.getTestIssue())
                             .nasdaqSymbol(stock.getNasdaqSymbol())
-                            .value(generateRandomStockValue(0.0,1000.0))
+                            .value(generateRandomStockValue(LOWER_STOCK_PRICE, UPPER_STOCK_PRICE))
                             .build())
                     .collect(Collectors.toList());
 
