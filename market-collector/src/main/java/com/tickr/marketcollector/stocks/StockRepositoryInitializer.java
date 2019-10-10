@@ -54,12 +54,17 @@ public class StockRepositoryInitializer {
                             .securityName(stock.getSecurityName())
                             .testIssue(stock.getTestIssue())
                             .nasdaqSymbol(stock.getNasdaqSymbol())
+                            .value(generateRandomStockValue(0.0,1000.0))
                             .build())
                     .collect(Collectors.toList());
 
             Collection<Stock> insertedStocks = this.mongoTemplate.insert(stocks, Stock.class);
             log.info("Adding {} stocks to the database", insertedStocks.size());
         }
+
     }
 
+    public Double generateRandomStockValue(Double lower, Double upper) {
+        return (Math.random() * (upper - lower)) + lower;
+    }
 }
