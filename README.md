@@ -1,6 +1,10 @@
 # tickr 
 Demo Stock Market Application using RSocket and Reactive MongoDB
 
+## Status
+[![Actions Status](https://xxx.execute-api.us-west-2.amazonaws.com/production/badge/jpaolasini/tickr)](https://xxx.execute-api.us-west-2.amazonaws.com/production/badge/jpaolasini/tickr)
+
+
 ## Running the Application
 
 From the root of the applciation we will build the **Market Collector** and the **Stock Ticker** microservices. 
