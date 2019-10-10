@@ -1,5 +1,5 @@
 # tickr 
-Demo Stock Market Application using RSocket and Reactive MongoDB, inspiration from bclozel's https://github.com/bclozel/spring-flights
+Demo Stock Market Application using RSocket and Reactive MongoDB, inspiration from @bclozel https://github.com/bclozel/spring-flights
 
 ## Running the Application
 
