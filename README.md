@@ -1,5 +1,5 @@
 # tickr 
-Demo Stock Market Application using RSocket and Reactive MongoDB
+Demo Stock Market Application using RSocket and Reactive MongoDB, inspiration from bclozel's https://github.com/bclozel/spring-flights
 
 ## Running the Application
 
@@ -19,3 +19,7 @@ java -jar market-collector/target/market-collector-0.0.1-SNAPSHOT.jar
 ```bash
 java -jar stock-ticker/target/stock-ticker-0.0.1-SNAPSHOT.jar
 ```
+
+## Market Collector
+
+On startup the Market Collector populated the DB from the `stocks.json` resource.
